@@ -1,0 +1,49 @@
+{
+  "name": "myjstest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "tape test/*.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules",
+    "dev": "npm run development -- --watch --mode development",
+    "prod": "npm run development -- --watch --mode production",
+    "build": "webpack",
+    "watch-wb": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "build": "^0.1.4",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1",
+    "local-web-server": "^3.0.7",
+    "npm-watch": "^0.6.0",
+    "path": "^0.12.7",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "watch": "^1.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "http-server": "^0.11.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scroll-to": "^3.0.0-beta.3"
+  }
+}

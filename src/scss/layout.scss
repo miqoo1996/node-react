@@ -1,0 +1,35 @@
+.intro-text {
+  padding-top: 115px!important;
+  padding-bottom: 100px!important;
+  text-shadow: 2px 1px 1px #6a6a77;
+  color: #ffffff;
+
+  div {
+    line-height: 46px;
+  }
+  a {
+    margin-left: 8px;
+    font-size: 18px;
+    text-transform: initial;
+  }
+  h4 {
+    color: #fed136;
+  }
+  i {
+    font-size: 18px;
+    color: #fed136;
+  }
+  .links {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: initial;
+
+    hr {
+      width: 30%;
+      border-top: 1px solid;
+    }
+  }
+  .intro-heading.text-uppercase {
+    font-size: 2em !important;
+  }
+}
