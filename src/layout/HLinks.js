@@ -7,8 +7,9 @@ const HLink = ({href, children, icon}) => {
     store.dispatch({ type: icon.replace('fa fa-', '').toUpperCase(), payload: {icon, children, href} });
 
     return <div>
-        <i className={icon} aria-hidden="true" />
-        <a className="navbar-brand js-scroll-trigger" href={href}>{children}</a>
+        <a className="navbar-brand js-scroll-trigger" href={href}>
+            <i className={icon} aria-hidden="true" /> {children}
+        </a>
     </div>;
 };
 

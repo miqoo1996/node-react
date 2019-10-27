@@ -5,12 +5,16 @@
   color: #ffffff;
 
   div {
-    line-height: 46px;
+
   }
   a {
+    max-width: 100%;
     margin-left: 8px;
     font-size: 18px;
     text-transform: initial;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   h4 {
     color: #fed136;
@@ -36,8 +40,7 @@
 
 .MuiDialog-container {
   max-height: 90%;
-  max-width: 90%;
-  margin-left: 5%;
+  margin: 5%;
   margin-top: 2.5%;
 
   //margin: 5%;
@@ -48,4 +51,13 @@
 
 #responsive-dialog-title {
   margin: 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  max-width: 100%;
+  overflow-x: hidden;
 }
