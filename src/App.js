@@ -26,7 +26,7 @@ class App extends React.Component {
                  <NavBarItem pref={this.portfolioRef} href="#portfolio"> Portfolio </NavBarItem>
               </NavBar>
 
-              <Header welcomeText="Welcome To Miqo.Com" />
+              <Header welcomeText="Welcome To Miqo.Com" infoText="I'm Miqayel Ishkhanyan - Full-Stack Web Developer" />
 
               <Content pref={this.portfolioRef} />
 

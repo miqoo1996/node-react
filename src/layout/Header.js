@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import HLinks, { HLink } from './HLinks'
 
-const Header = ({welcomeText}) => {
+const Header = ({welcomeText, infoText}) => {
 
     return <header className="masthead">
         <div className="container">
             <div className="intro-text">
                 <div className="intro-lead-in">{welcomeText}</div>
+                <div className="intro-heading text-uppercase">{infoText}</div>
                 <HLinks>
                     <hr/>
                     <HLink icon="fa fa-globe" href="#page-top">Miqo.Com</HLink>
