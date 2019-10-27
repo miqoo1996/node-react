@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { storeContext } from '../reducer/storeContext';
 
-const HLink = ({href, children, icon, store}) => {
+const HLink = ({href, children, icon}) => {
+    const store = useContext(storeContext);
+
     store.dispatch({ type: icon.replace('fa fa-', '').toUpperCase(), payload: {icon, children, href} });
 
     return <div>

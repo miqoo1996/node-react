@@ -1,11 +1,13 @@
-import React from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Content from './Content';
 
-import NavBar, {NavBarItem} from './NavBar';
+import { reducer } from './reducer/GLReducer';
+import { storeContext, store } from './reducer/storeContext';
+import NavBar, { NavBarItem } from './NavBar';
 
 import './Other'
 import './scss/layout.scss'
@@ -18,8 +20,7 @@ class App extends React.Component {
     }
 
     render() {
-
-        return <>
+        return <storeContext.Provider value={store}>
               <NavBar>
                  <NavBarItem href="#page-top"> Home </NavBarItem>
                  <NavBarItem pref={this.portfolioRef} href="#portfolio"> Portfolio </NavBarItem>
@@ -30,7 +31,7 @@ class App extends React.Component {
               <Content pref={this.portfolioRef} />
 
               <Footer text="&copy; 2019 All rights reserved. Miqo.Com" />
-            </>;
+        </storeContext.Provider>;
     }
 }
 

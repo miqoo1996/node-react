@@ -33,3 +33,19 @@
     font-size: 2em !important;
   }
 }
+
+.MuiDialog-container {
+  max-height: 90%;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 2.5%;
+
+  //margin: 5%;
+  img {
+    max-width: 100%;
+  }
+}
+
+#responsive-dialog-title {
+  margin: 20px;
+}
