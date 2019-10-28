@@ -57,8 +57,8 @@ const Content = ({pref}) => {
                     <h4>Multiplate Grading</h4>
                 </Portfolio>
 
-                <Portfolio name="Yii 2 Framework" site="https://essays.studymoose.com" image="img/portfolio/studymoose.png">
-                    <h4>AssaysStudyMoose</h4>
+                <Portfolio name="Yii 2 Framework" site="https://studymoose.com" image="img/portfolio/studymoose.png">
+                    <h4>Study Moose</h4>
                 </Portfolio>
 
                 <Portfolio name="Yii 2 Framework" site="https://www.mykaz.kz" image="img/portfolio/may-kaz.png">
