@@ -1,5 +1,6 @@
 import React from 'react';
 import { ResponsiveDialog } from '../../MaterialUiModal';
+import '../../scss/PRMuiDialog.scss'
 
 export const PORTFOLIO_MODAL_ITEM = (state, action) => {
     state.PRModal = {};
