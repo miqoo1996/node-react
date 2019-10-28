@@ -39,6 +39,14 @@
   }
 }
 
+#portfolio {
+  .portfolio-item {
+    article:hover {
+      box-shadow: 3px 2px 14px 0px #000;
+    }
+  }
+}
+
 #responsive-dialog-title {
   margin: 20px;
 }
